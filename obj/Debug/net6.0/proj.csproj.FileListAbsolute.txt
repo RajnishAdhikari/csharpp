@@ -1,0 +1,15 @@
+E:\c#_sharpand.net_framework\proj\bin\Debug\net6.0\proj.exe
+E:\c#_sharpand.net_framework\proj\bin\Debug\net6.0\proj.deps.json
+E:\c#_sharpand.net_framework\proj\bin\Debug\net6.0\proj.runtimeconfig.json
+E:\c#_sharpand.net_framework\proj\bin\Debug\net6.0\proj.dll
+E:\c#_sharpand.net_framework\proj\bin\Debug\net6.0\proj.pdb
+E:\c#_sharpand.net_framework\proj\obj\Debug\net6.0\proj.csproj.AssemblyReference.cache
+E:\c#_sharpand.net_framework\proj\obj\Debug\net6.0\proj.GeneratedMSBuildEditorConfig.editorconfig
+E:\c#_sharpand.net_framework\proj\obj\Debug\net6.0\proj.AssemblyInfoInputs.cache
+E:\c#_sharpand.net_framework\proj\obj\Debug\net6.0\proj.AssemblyInfo.cs
+E:\c#_sharpand.net_framework\proj\obj\Debug\net6.0\proj.csproj.CoreCompileInputs.cache
+E:\c#_sharpand.net_framework\proj\obj\Debug\net6.0\proj.dll
+E:\c#_sharpand.net_framework\proj\obj\Debug\net6.0\refint\proj.dll
+E:\c#_sharpand.net_framework\proj\obj\Debug\net6.0\proj.pdb
+E:\c#_sharpand.net_framework\proj\obj\Debug\net6.0\proj.genruntimeconfig.cache
+E:\c#_sharpand.net_framework\proj\obj\Debug\net6.0\ref\proj.dll

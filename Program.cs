@@ -5,8 +5,12 @@ string characterName = "John";
 int characterAge;
 characterAge = 35;
 
-Console.WriteLine("There once was a man named jkfjkdj");
-Console.WriteLine("He is 70 years old");
-Console.WriteLine("He really liked the name Gorge");
-Console.WriteLine("But he didn't like being 70");
+Console.WriteLine("There once was a man named " + characterName);
+Console.WriteLine("He is "+ characterAge +  " years old");
+
+characterName = "Mike";
+
+
+Console.WriteLine("He really liked the name " + characterName);
+Console.WriteLine("But he didn't like being " + characterAge);
 Console.ReadLine();

@@ -39,8 +39,9 @@ bool isFemale = false;
 
 
 //string concatenation 
+/*
 string greeting = "Good morning ";
-string name = "Ramdfjkdjfkdfhdjkffhjkh Shyam";
+string name = "RamdfjkdjfkdfhdjkffhjkY Shyam";
 Console.WriteLine(greeting + name);
 Console.WriteLine("Total character in greeting is " + greeting.Length);
 
@@ -56,11 +57,97 @@ Console.WriteLine(name[0]);
 Console.WriteLine(name[3]);
 Console.WriteLine(name[7]);
 Console.WriteLine(name[14]);
+
 Console.WriteLine(name.IndexOf("Shyam"));
-Console.WriteLine(name.IndexOf('y'));
+Console.WriteLine(name.IndexOf('Y'));
 
 //-1 in the string indicated that the string isn't present in the string
 Console.WriteLine(name.IndexOf('z'));
+
+//grabbing the substring of the string
+Console.WriteLine(name.Substring(24)); 
+
+
+
+//working with numbers in c#
+Console.WriteLine(-5.25555);
+Console.WriteLine(4 + 2 * 5);
+// Increment of the number 
+int num = 9;
+num++;
+Console.WriteLine(num);
+
+//Maths methods
+Console.WriteLine(Math.Abs(-4552));  //for absolute value 
+Console.WriteLine(Math.Pow(25,2));    // for power of any number 
+Console.WriteLine(Math.Sqrt(49));   // to find the square root of any number
+Console.WriteLine(Math.Max(49,25));     // to find the maximum number between any 2 number 
+Console.WriteLine(Math.Min(49,24));     //finding minimum
+Console.WriteLine(Math.Round(49.553));      // to round off the number
+
+
+
+
+
+//Getting input with the users
+Console.Write("Enter your name: ");
+string name = Console.ReadLine();
+Console.Write("Enter your age: ");
+string age = Console.ReadLine();
+Console.WriteLine("Hello " + name + " You are " + age );
+*/
+
+//Making calculator by taking input form the user 
+//int num = Convert.ToInt32("45");  // converting string to the intergr and then adding 
+//Console.WriteLine(num + 10);
+/*
+Console.Write("Enter a number: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter second number: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(num1 + num2);
+Console.ReadLine();
+
+
+//adding 2 decimal numbers
+Console.Write("Enter a number: ");
+double num1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Enter second number: ");
+double num2 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine(num1 + num2);
+
+Console.ReadLine();
+*/
+
+
+//Building a mad libs Game
+string color, pluralNoun, celebrity;
+Console.Write("Enter a color: ");
+color = Console.ReadLine();
+
+Console.Write("Enter a plural noun : ");
+pluralNoun = Console.ReadLine();
+
+Console.Write("Enter a celebrity: ");
+celebrity = Console.ReadLine();
+
+Console.WriteLine("Roses are " + color);
+Console.WriteLine(pluralNoun+ " are blue");
+Console.WriteLine("I love " + celebrity);
+Console.ReadLine();
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -117,7 +117,6 @@ double num2 = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine(num1 + num2);
 
 Console.ReadLine();
-*/
 
 
 //Building a mad libs Game
@@ -135,6 +134,34 @@ Console.WriteLine("Roses are " + color);
 Console.WriteLine(pluralNoun+ " are blue");
 Console.WriteLine("I love " + celebrity);
 Console.ReadLine();
+
+
+//Array in c#
+int [] luckyNumberes = {2,3,4, 5, 6, 7, 8, 9};
+Console.WriteLine(luckyNumberes[0]);
+//changing the elements in array
+luckyNumberes[2] = 500;
+Console.WriteLine(luckyNumberes[2]);
+Console.WriteLine(luckyNumberes[7]);
+//creating the array of strings
+string[] friends = new string[5] { "roshan", "saphal", "ritik", "bhawishya", "anupam" };
+foreach (string friend in friends)
+{
+    Console.WriteLine(friend);
+}
+
+Console.ReadLine();
+*/
+
+//METHODS IN C#
+//CREATING METHOD TO SAY HI TO THE 
+SayHi();
+static void SayHi()
+{
+    Console.WriteLine("Hello user");
+    
+}
+
 
 
 

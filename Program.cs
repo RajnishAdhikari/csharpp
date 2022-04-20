@@ -151,17 +151,89 @@ foreach (string friend in friends)
 }
 
 Console.ReadLine();
-*/
 
-//METHODS IN C#
+
+//METHODS or function IN C#
 //CREATING METHOD TO SAY HI TO THE 
-SayHi();
-static void SayHi()
+SayHi("mike", 22);
+SayHi("dada", 25);
+static void SayHi(string name, int age)
 {
-    Console.WriteLine("Hello user");
+    Console.WriteLine("Hello " + name + "you are " + age);
     
 }
 
+
+
+
+//RETURN STATEMENT IN C# METHODS
+int cubedNumber = cube(6);
+Console.WriteLine(cubedNumber);
+Console.WriteLine(cube(5));
+static int cube(int num)
+{
+    int result = num * num * num;
+    return result;
+}
+*/
+
+
+//if SATEMENTS 
+bool isMale = true;
+bool isTall = true;
+if (isMale && isTall)
+{
+    Console.WriteLine("You are a tall male");
+
+}
+else
+{
+    Console.WriteLine("You are not male or not tall or both");
+}
+
+bool isMalee = true;
+bool isTalle = false;
+if (isMalee && isTalle)
+{
+    Console.WriteLine("You are a tall male");
+
+}
+else
+{
+    Console.WriteLine("You are not male or not tall or both");
+}
+
+bool is_Male = true;
+bool is_Tall = false;
+if (is_Male || is_Tall)
+{
+    Console.WriteLine("You are a tall male");
+
+}
+else
+{
+    Console.WriteLine("You are not male or not tall or both");
+}
+
+bool is__Male = false;
+bool is__Tall = true;
+if (is__Male && is__Tall)
+{
+    Console.WriteLine("You are a tall male");
+
+}
+else if(is__Male && !is__Tall)
+{
+    Console.WriteLine("You are a short male");
+}
+else if(!is__Male && is__Tall)
+{
+    Console.WriteLine("You are not male but you are tall ");
+}
+else
+{
+    Console.WriteLine("You are not male and not tall");
+}
 
 
 

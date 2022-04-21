@@ -175,7 +175,7 @@ static int cube(int num)
     int result = num * num * num;
     return result;
 }
-*/
+
 
 
 //if SATEMENTS 
@@ -234,6 +234,192 @@ else
 {
     Console.WriteLine("You are not male and not tall");
 }
+
+
+//MORE IF STATEMENT
+//PROGRAM TO FIND GREATER NUMBER BETWEEN TWO NUMBER AND RETURN THE GREATER ONE
+Console.WriteLine(GetMax(200, 10));
+static int GetMax(int num1, int num2)
+{
+    int result;
+    if (num1 > num2)
+    {
+        result = num1;
+    }
+    else
+    {
+        result = num2; 
+    }
+    return result;
+}
+
+
+
+
+//PROGRAM TO FIND GREATER NUMBER BETWEEN 3 NUMBER AND RETURN THE GREATER ONE
+Console.WriteLine(GetMax(15, 56, 25));
+static int GetMax(int num1, int num2,int num3)
+{
+    int result;
+    if(num1 >= num2 && num1 >= num3)
+    {
+        result = num1;
+    } 
+    else if(num2 >= num1 && num2 >= num3)
+    {
+        result=num2;
+    }
+    else
+    {
+        result = num3;  
+    }
+
+
+
+    return result;
+}
+
+
+
+//Program to build calculator
+Console.WriteLine("Enter first number: ");
+double num1 = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Enter Operator: ");
+string op = Console.ReadLine();
+
+Console.WriteLine("Enter second number: ");
+double num2 = Convert.ToDouble(Console.ReadLine());
+
+
+if (op == "+")
+{
+    Console.WriteLine(num1 + num2);
+}
+else if (op == "-")
+{
+    Console.WriteLine(num1 - num2);
+}
+else if (op == "*")
+{
+    Console.WriteLine(num1 * num2);
+}
+else if (op == "/")
+{
+    Console.WriteLine(num1 / num2);
+}
+else
+{
+    Console.WriteLine("Invalid operator");
+}
+
+
+//SWITCH STATEMENT
+//PROGRAM TO PRINT DAYS OF A WEEK IF WE PASS 0 TO 6  MAPPING NUMBER TO THE SPECIFIC DAY OF A WEEK
+Console.WriteLine(GetDay(5));
+Console.WriteLine(GetDay(0));
+Console.WriteLine(GetDay(10));
+static string GetDay (int dayNum)
+{
+    string dayName;
+
+    switch (dayNum )
+    {
+        case 0:
+            dayName = "Sunday";
+            break;
+        case 1:
+            dayName = "Monday";
+            break;
+        case 2:
+            dayName = "Tuesday";
+            break;
+        case 3:
+            dayName = "Wednesday";
+            break;
+        case 4:
+            dayName = "Thursday";
+            break;
+        case 5:
+            dayName = "Friday";
+            break;
+        case 6:
+            dayName = "Saturday";
+            break;
+        default:
+            dayName = "Invalid day Number";
+            break;
+    }
+
+    return dayName;
+}
+
+
+
+//WHILE LOOP
+//IT ALLOWS TO REPEAT CERTAIN BLOCK OF CODE WHEN THE GIVEN CONDITION IS TRUE
+int index = 1;
+while(index <= 5)
+{
+    Console.WriteLine(index);
+    index++;
+}
+
+//do while loop
+int index = 6;
+do
+{
+    Console.WriteLine(index);
+    index++;  
+}
+while (index <= 5);
+
+*/
+
+//BUILDING A GUESSING GAME
+string word = "giraffe";
+string guess = "";
+int guessCount = 0;
+int guessLimit = 3;
+bool outofGuesses = false;
+
+while (guess != word && !outofGuesses)
+{
+    if(guessCount < guessLimit )
+    {
+        Console.Write("Guess a word: ");
+        guess = Console.ReadLine();
+        guessCount++;
+    }
+    else
+    {
+        outofGuesses = true;
+    }
+    
+}
+if( outofGuesses )
+{
+    Console.WriteLine("You lose.");
+
+}
+else
+{ 
+    Console.Write("you win");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

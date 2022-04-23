@@ -664,7 +664,7 @@ namespace proj
     }
 }
 
-*/
+
 
 //STATIC METHOD AND CLASSES
 using System;
@@ -683,6 +683,27 @@ namespace proj
         }
     }
 }
-
+*/
 //INHERITANCE IN C# 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace proj
+{
+    public class Progarm
+    {
+        static void Main(string[] args)
+        {
+            chef chef = new chef();
+            chef.MakeChicken();
+            ItalianChef italianChef = new ItalianChef();
+            italianChef.MakeChicken();
+            italianChef.MakeSpecialDish();
+        }
+    }
+}
+
 

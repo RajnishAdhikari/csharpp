@@ -493,17 +493,46 @@ try
 catch(Exception e)
 {
     Console.WriteLine(e.Message); //this method shows what actually the error is
-*/
+
 
 //CLASSES AND OBJECT CONCEPT 
 
 
 
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
+namespace proj
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Book book1 = new Book();
+            book1.title = "Harry Potter";
+            book1.author = "jk rolling";
+            book1.pages = "400";
+            //Console.WriteLine(book1.title);
+            //Console.WriteLine(book1.author);
 
+            Book book2 = new Book();
+            book2.title = "Lord of the rings";
+            book2.author = "Tolkein";
+            book2.pages = "700";
+            Console.WriteLine(book2.title);
+            Console.WriteLine(book2.author);
+        }
+    }
 
+}
 
+*/
+
+//CONSTRUCTORS
 
 
 

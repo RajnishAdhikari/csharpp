@@ -8,5 +8,10 @@ namespace proj
 {
     internal class Book
     {
+        //CREATING A COMPLEX DATA TYPE
+        public string title;
+        public string author;
+        public string pages;
     }
+    
 }

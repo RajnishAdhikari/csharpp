@@ -374,7 +374,7 @@ do
 }
 while (index <= 5);
 
-*/
+
 
 //BUILDING A GUESSING GAME
 string word = "giraffe";
@@ -407,12 +407,95 @@ else
     Console.Write("you win");
 }
 
+//FOR LOOP IN C#
+//int i = 1;  we can initialize here or in the for loop itself
+
+for(int i = 1; i<=5; i++)
+{
+    Console.WriteLine(i);
+}
+Console.ReadLine();
 
 
 
+int i = 0;
+for (i = 0; i <= 19; i++)
+{
+    Console.WriteLine(i);
+}
+Console.ReadLine();
+
+
+//printing all the elements of an array
+int[] luckyNumbers = {4,8,15,16,23,42};
+for (int i = 0; i < luckyNumbers.Length; i++)
+{
+    Console.WriteLine(luckyNumbers[i]);
+    
+}
+Console.ReadLine();
+
+
+//EXPONENT FUNCTION IN C#
+Console.WriteLine(GetPow(3, 2));
+Console.WriteLine(GetPow(3, 3));
+Console.WriteLine(GetPow(2, 6));
+static int GetPow(int baseNum, int powNum)
+{
+    int result = 1;
+    for(int i = 0; i < powNum; i++)
+    {
+        result = result * baseNum;
+    }
+    return result;
+}
 
 
 
+//2-D Array and accessing the elements in 2 dimensional array
+int[,] numberGrid = {
+    {1,2},
+    {3,4},
+    {5,6},
+};
+int[,] myArraay = new int[2, 3];
+Console.WriteLine(numberGrid[0,0]);
+Console.WriteLine(numberGrid[1,1]);
+
+
+//BASIC OF WORKING AND HANDELING OF EXCEPTION  EXCEPTION HANDLING
+try
+{
+
+    Console.WriteLine("Enter a number:");
+    int num1 = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Enter another number: ");
+    int num2 = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine(num1 / num2);
+}
+
+catch
+{
+    Console.WriteLine("error");
+}
+
+
+try
+{
+
+    Console.WriteLine("Enter a number:");
+    int num1 = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Enter another number: ");
+    int num2 = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine(num1 / num2);
+}
+
+catch(Exception e)
+{
+    Console.WriteLine(e.Message); //this method shows what actually the error is
+*/
+
+//CLASSES AND OBJECT CONCEPT 
 
 
 

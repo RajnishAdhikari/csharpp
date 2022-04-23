@@ -530,21 +530,159 @@ namespace proj
 
 }
 
-*/
+
 
 //CONSTRUCTORS
 
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace proj
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Book book1 = new Book("Mike"); //here Book() is calling that constructor method 
+            book1.title = "Harry Potter";
+            book1.author = "jk rolling";
+            book1.pages = "400";
+            //Console.WriteLine(book1.title);
+            //Console.WriteLine(book1.author);
+
+            Book book2 = new Book("John");
+            book2.title = "Lord of the rings";
+            book2.author = "Tolkein";
+            book2.pages = "700";
+           // Console.WriteLine(book2.title);
+           // Console.WriteLine(book2.author);
+        }
+    }
+
+}
+
+
+//passing the parameter in the constructor
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace proj
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Book book1 = new Book("Harry Potter" , "jk rowlings", 400); //here we pass the parameter in Book() constructor 
+            Book book2 = new Book("Lord of the rings","Tolkein", 700);
+
+            //let us modify the name of the book for book2
+            book2.title = "The hobbit";
+
+            Console.WriteLine(book1.title);
+            Console.WriteLine(book2.title);
+
+        }
+    }
+
+}
+
+
+//OBJECT METHODS
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace proj
+{
+    public class Program 
+    {
+        static void Main(string[] args)
+        {
+            Book student1 = new Book("jim", "business", 2.9);
+            Book student2 = new Book("Pam", "art", 3.6);
+            Console.WriteLine(student1.HasHonors());
+            Console.WriteLine(student2.HasHonors());
+        }
+    }
+}
+
+
+//GETTER AND SETTER 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace proj
+{
+    public class Progarm
+    {
+        static void Main(string[] args)
+        {
+            //in tutorial there is Movie in place of Book
+            Book avengers = new Book("The avengers", "joss whedon", "pg- 13");
+            Book shrek = new Book("shrek", "adam adason", "pg");
+            shrek.Rating = "R";
+            Console.WriteLine(shrek.Rating);
+
+        }
+    }
+}
 
 
 
+//STATIC CLASS ATTRIBUTE 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
+namespace proj
+{
+    public class Progarm
+    {   
+        //in place of Book there is Song in the tutorial 
+        static void Main(string[] args)
+        {
+            Book holiday = new Book("holiday", "green day", 200);
+            Console.WriteLine(holiday.title);
+            Book kashmir = new Book("kashmir", "led zeppelin", 150);
+            Console.WriteLine(kashmir.title);
+            
+        }
+    }
+}
 
+*/
 
+//STATIC METHOD AND CLASSES
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-
-
-
+namespace proj
+{
+    public class Progarm
+    {
+        static void Main(string[] args)
+        {
+            UsefulTools.SayHi("Mike");
+        }
+    }
+}
 
 
 
